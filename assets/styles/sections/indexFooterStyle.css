@@ -4,49 +4,82 @@ Footer {
   left: 0;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  height: 700px;
+  height: 600px;
   width: 100%;
   z-index: 1;
   top: 320px;
   padding-left: 50px;
   padding-right: 50px;
+  padding-top: 40px;
+  gap: 10%;
 }
 #contactDetails {
   display: flex;
   flex-direction: column;
   user-select: none;
+  gap: 20px;
 }
-#contactDetails > p {
-  color: #3e5a97;
-  font-size: 14px;
+#contactDetails > h6 {
+  font-size: 4rem;
   font-family: poppins, sans-serif;
-  font-weight: bold;
-  line-height: 30px;
+  font-weight: 600;
+  color: #3e5a97;
+  margin-bottom: 10px;
 }
-#websiteRights > p {
-  color: #3e5a97;
-  font-size: 14px;
+.contactInfo {
+  font-size: 2rem;
   font-family: poppins, sans-serif;
-  user-select: none;
+  font-weight: 500;
+  color: #2193e4;
 }
 #socialMedia {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 10px;
+}
+#socialMedia > p {
+  color: #3e5a97;
+  font-family: poppins, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+#socialMediaIcons {
   display: flex;
   flex-direction: row;
   gap: 25px;
   user-select: none;
 }
-
-#socialMedia > a > img {
+#socialMediaIcons > a > img {
   height: 42px;
   width: 42px;
   transition: 0.3s ease;
-  filter: invert(34%) sepia(18%) saturate(1420%) hue-rotate(190deg)
-    brightness(88%) contrast(90%);
+  filter: invert(46%) sepia(82%) saturate(5481%) hue-rotate(192deg)
+    brightness(95%) contrast(92%);
 }
-#socialMedia > a > img:hover {
+
+#socialMediaIcons > a > img:hover {
   transform: scale(1.1);
-  filter: invert(34%) sepia(18%) saturate(1420%) hue-rotate(190deg)
-    brightness(88%) contrast(90%);
+  filter: invert(46%) sepia(82%) saturate(5481%) hue-rotate(192deg)
+    brightness(95%) contrast(92%);
+}
+#contactMessage {
+  display: flex;
+  height: 50%;
+  width: 40%;
+  position: relative;
+  border: 1px solid #3e5a97;
+}
+.contactIcons {
+  height: 36px;
+  width: auto;
+}
+.contactDiv {
+  display: flex;
+  flex-direction: row;
+  gap: 15 px;
+  align-items: center;
 }

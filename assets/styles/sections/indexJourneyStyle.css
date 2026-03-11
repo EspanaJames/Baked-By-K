@@ -1,3 +1,7 @@
+@font-face {
+  font-family: caveatFont;
+  src: url("/assets/fonts/caveat.ttf") format("truetype");
+}
 #journeySoFar {
   position: relative;
   width: 100%;
@@ -7,15 +11,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   user-select: none;
   background-color: #d8f1ff;
+  padding: 20px;
 }
 #journeySoFar > h5 {
-  color: #4b73e0;
-  font-size: 5rem;
+  color: #3a4772;
+  font-size: 3rem;
   letter-spacing: 2px;
-  font-family: poppins, sans-serif;
+  font-family: caveatFont, sans-serif;
   font-weight: bold;
   user-select: none;
 }
