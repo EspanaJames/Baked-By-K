@@ -1,0 +1,48 @@
+@font-face {
+  font-family: caveatFont;
+  src: url("/assets/fonts/caveat.ttf") format("truetype");
+}
+#productDisplay {
+  position: relative;
+  top: 320px;
+  display: flex;
+  flex-direction: column;
+  height: 800px;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: start;
+  user-select: none;
+  padding: 20px;
+  gap: 15px;
+}
+
+#productDisplay > h3 {
+  color: #3a4772;
+  font-family: caveatFont, sans-serif;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-weight: bold;
+  user-select: none;
+  text-align: center;
+}
+#productContainer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  height: 60%;
+  width: 80%;
+  border: 1px solid white;
+  background: linear-gradient(
+    90deg,
+    #fffaf0 0%,
+    #181a3a 5%,
+    #78a0d8 25%,
+    #a6bbd8 50%,
+    #78a0d8 75%,
+    #181a3a 95%,
+    #fffaf0 100%
+  );
+  opacity: 10%;
+  border-radius: 5px;
+}

@@ -1,0 +1,110 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+html {
+  font-family: poppins, sans-serif;
+  font-size: 52.5%;
+  background-color: #fffaf0;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+html::-webkit-scrollbar {
+  display: none;
+  overflow-x: hidden;
+}
+body {
+  overflow-x: hidden;
+}
+main {
+  display: block;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+}
+#navBar {
+  background: rgba(58, 71, 114, 0.6);
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  height: 66px;
+  width: 100vw;
+  align-items: center;
+  padding: 1rem 3.5rem;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  z-index: 1000 !important;
+}
+#titleBar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  user-select: none;
+}
+#titleBar > img {
+  width: 48px;
+  height: 48px;
+  margin-right: 10px;
+  user-select: none;
+}
+#titleBar > h1 {
+  color: #fff;
+  font-size: 2.4rem;
+  letter-spacing: 2px;
+  user-select: none;
+}
+#navButtons {
+  display: flex;
+  flex-direction: row;
+  user-select: none;
+}
+#navButtons > button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+#navButtons > button:hover {
+  transform: scale(1.1);
+}
+#callToAction {
+  height: 100%;
+  background: #a6bbd8;
+  border: 1px solid #ffffff;
+  border-radius: 6px;
+  color: #fff;
+  border-radius: 4px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  transition: 0.3s ease;
+}
+#callToAction:hover {
+  transform: scale(1.1);
+  background-color: #181a3a;
+}
+#callToAction > button {
+  background: transparent;
+  border: none;
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  letter-spacing: 1px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  user-select: none;
+  font-weight: 600;
+}

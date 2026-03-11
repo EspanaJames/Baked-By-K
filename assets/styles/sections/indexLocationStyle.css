@@ -1,0 +1,115 @@
+#locationBased {
+  position: relative;
+  top: 320px;
+  display: flex;
+  flex-direction: row;
+  height: 630px;
+  width: 100%;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  gap: 2%;
+  padding-bottom: 30px;
+}
+#locationBased > h6 {
+  color: #4b73e0;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-family: poppins, sans-serif;
+  font-weight: bold;
+  user-select: none;
+}
+#locationMap {
+  width: 20%;
+  height: 100%;
+  background-color: #d8f1ff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#philippinesMap {
+  height: 90%;
+  width: auto;
+  position: relative;
+}
+#boholWrapper {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 10;
+  top: 58%;
+  left: 37.5%;
+}
+
+#boholMap {
+  height: 5%;
+  width: auto;
+  transition: transform 0.3s ease;
+}
+
+#boholTooltip {
+  position: absolute;
+  transform: translateX(-50%);
+  background: #4b73e0;
+  color: white;
+  padding: 6px 10px;
+  font-size: 1.4rem;
+  font-family: poppins, sans-serif;
+  border-radius: 6px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.1s ease;
+}
+
+#boholWrapper:hover #boholTooltip {
+  opacity: 1;
+}
+
+#boholWrapper:hover #boholMap {
+  transform: scale(2);
+}
+
+#orderInstructions {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  padding: 10px;
+}
+
+#orderInstructions h2 {
+  font-size: 5rem;
+  color: #93b2eb;
+  letter-spacing: 2px;
+  font-weight: 900;
+  margin-bottom: 30px;
+}
+
+.processStep {
+  background: #93b2eb;
+  color: white;
+  padding: 12px 30px;
+  width: fit-content;
+  border-radius: 12px;
+  width: 50%;
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: 600;
+}
+
+.finalStep {
+  background: #729be6;
+}
+
+.divider {
+  width: 2px;
+  height: 40px;
+  border-left: 3px dotted #a6bbd8;
+  margin: 10px 0;
+}

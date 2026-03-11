@@ -1,0 +1,39 @@
+#journeySoFar {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  top: 320px;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  background-color: #d8f1ff;
+}
+#journeySoFar > h5 {
+  color: #4b73e0;
+  font-size: 5rem;
+  letter-spacing: 2px;
+  font-family: poppins, sans-serif;
+  font-weight: bold;
+  user-select: none;
+}
+.wave-bottom {
+  position: absolute;
+  bottom: -100px;
+  left: 0;
+  width: 100%;
+  height: 120px;
+  overflow: visible;
+}
+
+.wave-bottom svg {
+  width: 100%;
+  height: 100%;
+  transform: rotate(180deg);
+}
+.wave-bottom svg path {
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.15))
+    drop-shadow(0 8px 10px rgba(0, 0, 0, 0.2));
+}

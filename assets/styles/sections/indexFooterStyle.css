@@ -1,0 +1,52 @@
+Footer {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 700px;
+  width: 100%;
+  z-index: 1;
+  top: 320px;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+#contactDetails {
+  display: flex;
+  flex-direction: column;
+  user-select: none;
+}
+#contactDetails > p {
+  color: #3e5a97;
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  font-weight: bold;
+  line-height: 30px;
+}
+#websiteRights > p {
+  color: #3e5a97;
+  font-size: 14px;
+  font-family: poppins, sans-serif;
+  user-select: none;
+}
+#socialMedia {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  user-select: none;
+}
+
+#socialMedia > a > img {
+  height: 42px;
+  width: 42px;
+  transition: 0.3s ease;
+  filter: invert(34%) sepia(18%) saturate(1420%) hue-rotate(190deg)
+    brightness(88%) contrast(90%);
+}
+#socialMedia > a > img:hover {
+  transform: scale(1.1);
+  filter: invert(34%) sepia(18%) saturate(1420%) hue-rotate(190deg)
+    brightness(88%) contrast(90%);
+}
